@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "name": "Jaquith",
+    "last_name": "Went",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 10 },
+      { "name": "math", "score": 15 },
+      { "name": "science", "score": 12 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Cara",
+    "last_name": "Vardy",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 12 },
+      { "name": "math", "score": 20 },
+      { "name": "science", "score": 5 }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Karol",
+    "last_name": "Vardy",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 8 },
+      { "name": "math", "score": 15 },
+      { "name": "science", "score": 15 }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Elias",
+    "last_name": "Smith",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 18 },
+      { "name": "math", "score": 16 },
+      { "name": "science", "score": 20 }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Sophia",
+    "last_name": "Johnson",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 15 },
+      { "name": "math", "score": 18 },
+      { "name": "science", "score": 17 }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Liam",
+    "last_name": "Brown",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 14 },
+      { "name": "math", "score": 19 },
+      { "name": "science", "score": 16 }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Emma",
+    "last_name": "Martinez",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 17 },
+      { "name": "math", "score": 14 },
+      { "name": "science", "score": 18 }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Noah",
+    "last_name": "Taylor",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 16 },
+      { "name": "math", "score": 17 },
+      { "name": "science", "score": 19 }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Olivia",
+    "last_name": "Anderson",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 20 },
+      { "name": "math", "score": 12 },
+      { "name": "science", "score": 16 }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "William",
+    "last_name": "Garcia",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 13 },
+      { "name": "math", "score": 20 },
+      { "name": "science", "score": 14 }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Isabella",
+    "last_name": "Hernandez",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 19 },
+      { "name": "math", "score": 18 },
+      { "name": "science", "score": 15 }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "James",
+    "last_name": "Lopez",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 15 },
+      { "name": "math", "score": 16 },
+      { "name": "science", "score": 17 }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Charlotte",
+    "last_name": "Lee",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": null },
+      { "name": "math", "score": null },
+      { "name": "science", "score": null }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Aiden",
+    "last_name": "Perez",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 18 },
+      { "name": "math", "score": null },
+      { "name": "science", "score": 20 }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Mia",
+    "last_name": "Moore",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 15 },
+      { "name": "math", "score": null },
+      { "name": "science", "score": null }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Ethan",
+    "last_name": "Taylor",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 14 },
+      { "name": "math", "score": 19 },
+      { "name": "science", "score": null }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Ava",
+    "last_name": "Johnson",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": null },
+      { "name": "math", "score": 17 },
+      { "name": "science", "score": 19 }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Logan",
+    "last_name": "Gonzalez",
+    "role": "student",
+    "courses": [
+      { "name": "language", "score": 13 },
+      { "name": "math", "score": null },
+      { "name": "science", "score": 14 }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Deeyn",
+    "last_name": "Coneley",
+    "role": "teacher"
+  },
+  {
+    "id": 99,
+    "name": "Hildagard",
+    "last_name": "Scates",
+    "role": "admin"
+  }
+]
