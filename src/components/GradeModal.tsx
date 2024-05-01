@@ -50,27 +50,18 @@ export default function GradeModal({
     findGradeByCourse();
   }, [student.courses]);
 
-  useEffect(() => {
-    if (!show) {
-      setLanguageGrade(languageGradeRef.current);
-      setMathGrade(mathGradeRef.current);
-      setScienceGrade(mathGradeRef.current);
-    }
-  }, [show]);
-
   const handleChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
     let newGrade = Number(evt.target.value);
-    const course = evt.target.id;
+    const courseName = evt.target.id;
     if (newGrade > 20) newGrade = 20;
     if (newGrade < 0) newGrade = 0;
-    if (course === 'math-grade') setMathGrade(Number(newGrade));
-    if (course === 'language-grade') setLanguageGrade(Number(newGrade));
-    if (course === 'science-grade') setScienceGrade(Number(newGrade));
+    if (courseName === 'math-grade') setMathGrade(Number(newGrade));
+    if (courseName === 'language-grade') setLanguageGrade(Number(newGrade));
+    if (courseName === 'science-grade') setScienceGrade(Number(newGrade));
   };
 
   const handleSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
     evt.preventDefault();
-    handleClose();
     const newCourses = [
       { name: CourseName.Language, score: languageGrade },
       { name: CourseName.Math, score: mathGrade },
@@ -82,6 +73,7 @@ export default function GradeModal({
       studentId: student.id,
       userRole: role,
     });
+    handleClose();
   };
 
   const isEditableInput = (rol: Role, grade: number | null): boolean => {

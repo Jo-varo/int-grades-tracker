@@ -24,6 +24,13 @@ export default function TableRow({ student, index, type }: Props) {
     );
   };
 
+  const getCoursesAverage = (courses: Student['courses']) => {
+    return (
+      courses.reduce((acc, grade) => acc + (grade.score ? grade.score : 0), 0) /
+      student.courses.length
+    ).toFixed(2);
+  };
+
   const modalRole =
     type === Role.Teacher ? 'Add' : type === Role.Admin ? 'Edit' : '';
 
@@ -36,14 +43,7 @@ export default function TableRow({ student, index, type }: Props) {
       {student.courses.map((course) => (
         <td key={student.id + course.name}>{course.score}</td>
       ))}
-      <td>
-        {(
-          student.courses.reduce(
-            (acc, grade) => acc + (grade.score ? grade.score : 0),
-            0
-          ) / student.courses.length
-        ).toFixed(2)}
-      </td>
+      <td>{getCoursesAverage(student.courses)}</td>
       {type !== Role.Student && (
         <td>
           <Button
@@ -55,13 +55,15 @@ export default function TableRow({ student, index, type }: Props) {
           </Button>
         </td>
       )}
-      <GradeModal
-        student={student}
-        show={showModal}
-        handleClose={handleShowModal}
-        title={`${modalRole} Grades`}
-        role={type}
-      />
+      {showModal && (
+        <GradeModal
+          student={student}
+          show={showModal}
+          handleClose={handleShowModal}
+          title={`${modalRole} Grades`}
+          role={type}
+        />
+      )}
     </tr>
   );
 }
