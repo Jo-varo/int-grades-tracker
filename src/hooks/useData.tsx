@@ -5,7 +5,7 @@ export default function useData() {
   const dataContext = useContext(DataContext)
 
   if (dataContext === null || dataContext === undefined) {
-    throw new Error('Error at getting cart');
+    throw new Error('Error at getting context data');
   }
 
   return dataContext;

@@ -8,7 +8,7 @@ export default function TeacherDashboard() {
 
   return (
     <div>
-      <h1 className='my-2'>Teacher Dashboard</h1>
+      <h2 className='my-2'>Teacher Dashboard</h2>
       <UserTable type={role} data={students} />
     </div>
   );

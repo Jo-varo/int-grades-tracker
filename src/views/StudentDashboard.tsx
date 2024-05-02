@@ -20,7 +20,9 @@ export default function StudentDashboard() {
     <div>
       {student ? (
         <>
-          <h2>Grades of {`${student.name} ${student.last_name}`}</h2>
+          <h2 className="my-2">
+            Grades of {`${student.name} ${student.last_name}`}
+          </h2>
           <UserTable type={role} data={student} />
         </>
       ) : (

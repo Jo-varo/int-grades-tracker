@@ -8,7 +8,7 @@ export default function AdminDashboard() {
 
   return (
     <div>
-      <h1>Admin Dashboard</h1>
+      <h2 className='my-2'>Admin Dashboard</h2>
       <UserTable type={role} data={students}/>
     </div>
   );
